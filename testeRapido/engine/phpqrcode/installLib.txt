@@ -1,0 +1,3 @@
+Descompactar na pasta phpqrcode a biblioteca php para QRCode;
+
+https://sourceforge.net/projects/phpqrcode/
