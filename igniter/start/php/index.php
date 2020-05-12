@@ -11,7 +11,7 @@
             $_SESSION['id_empr'] = $_SESSION['id_empr_url_session'];
         }
 
-		$master_style = 'global.php';
+		$master_style = 'global-white.css';
 		$profile = new Template("igniter/welcome/html/index.html");
 
 	}else{
