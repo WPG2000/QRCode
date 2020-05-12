@@ -1,0 +1,41 @@
+<meta charset="utf-8">
+
+<form class="form_master [@form_mode_session]" id="form_[@screen_label]" enctype="multipart/form-data">
+
+	[@form_master_fields]
+
+	<div class="form_footer">
+		<ul>
+			<button type="reset" class="btn_decline"><span class="text"></span><span class="icone"></span></button>
+			<button type="submit" class="btn_save"><span class="text"></span><span class="icone icon-check-square"></span></button>
+			<button type="button" class="btn_new"><span class="text"></span><span class="icone"></span></button>
+			<button type="button" class="btn_generate_link"><span class="text"></span><span class="icone"></span></button>
+			<button type="button" class="btn_remove"><span class="text"></span><span class="icone"></span></button>
+			<button type="button" class="btn_reactive"><span class="text"></span><span class="icone"></span></button>
+			<button type="button" class="btn_enable"><span class="text"></span><span class="icone"></span></button>
+		</ul>
+	</div><!-- /form_footer-->
+
+	<input type="hidden" name="id_escolhido" value="[@id_escolhido]" class="hidden_id_escolhido" />
+	<input type="hidden" name="screen_label" value="[@screen_label]" class="hidden_screen_label" /> 
+	<input type="hidden" name="action_nav_btn" value="[@action_nav_btn]" class="hidden_action_nav_btn" />
+	<input type="hidden" name="user_loc_session" value="[@user_loc_session]" class="hidden_user_loc_session" />
+	<input type="hidden" name="user_prop_session" value="[@user_prop_session]" class="hidden_user_prop_session" />
+	<input type="hidden" name="engine_session" value="[@engine_session]" class="hidden_engine_session" />
+
+</form>
+
+<div class="temp_message"></div>
+
+<script>
+	var form_master_attr_id = $(".form_master").attr("id");
+	var id_escolhido = '[@id_escolhido]';
+	var screen_label = '[@screen_label]';
+	var engine_session = '[@engine_session]';
+	var action_nav_btn = '[@action_nav_btn]';
+	var user_loc_session = '[@user_loc_session]';
+	var user_prop_session = '[@user_prop_session]';
+</script>
+
+<script src="engine/form-master/js/form-master.js"></script>
+

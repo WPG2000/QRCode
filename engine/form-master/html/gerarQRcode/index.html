@@ -1,0 +1,112 @@
+<meta charset="utf-8">
+
+<!-- ... -->
+
+<!-- ..................... NomadTab .................................. -->
+<div class="nomad_tab_wrapp nomad_tab_wrapp_1cols">
+
+	<div class="ntab_body">
+	<ul>				
+		
+		<!-- ... -->
+		
+		<!-- ................................................................. -->					
+		<fieldset style="width:95%;padding-bottom:0;">
+			
+			<legend align="left">
+				<p>
+					<span class="icon icon-files2"></span>
+					<span class="text">Dados para Gerar</span>
+				</p>
+			</legend>						
+			
+			<li style="text-align:left;">
+				<span class="about_cad" style="font-size:12px;font-style:normal;color:#1c1c1c;">
+					<span class="icon"></span>
+					O QRCode será gerado com o valor desejado.
+				</span>  				
+			</li>					
+			
+			<li>
+				<div class="ntab_li_col" style="">			
+					<label><span class="text">Valor (R$)</span></label>																									
+					<input type="text" name="valorDigitado" class="numbers" required style="width:150px;" />
+				</div><!-- /ntab_li_col-->							
+			</li>
+
+			<input type="hidden" name="hidden_tipo" value="gerarQRcode">
+						
+		</fieldset>	
+		
+		<fieldset style="width:95%;padding-top:0;">
+			<div class="gerarQRcode_box">			
+				<div class="gQRcb_title" style="width:100%;"></div><!-- /gQRcb_title-->
+				<div class="gQRcb_content"></div><!-- /gQRcb_content-->			
+			</div><!-- /gerarQRcode_box-->
+		</fieldset>
+		
+	</ul>
+</div><!-- /ntab_body-->
+
+</div><!-- /nomad_tab_wrapp-->
+<!-- .................... /NomadTab .................................. -->
+
+<!-- ... -->
+
+<!-- ................................................................. -->
+<!--
+<input type="hidden" name="id_meu_cadastro" value="[@id_meu_cadastro]" />
+<input type="hidden" name="empresa_escolhida_id" value="[@empresa_escolhida_id]" />	
+-->
+<!-- ................................................................. -->
+
+<!-- ... -->
+
+<script src="engine/js/calendarFormat/calendar-format.js"></script>
+<script>
+$(document).ready(function(){			
+	
+	/* -- */
+	
+	/* ............................................................................ */		
+	var action_nav_btn = '[@action_nav_btn]';	
+	/* ............................................................................ */		
+
+	/* -- */
+	
+	/* ............................................................................ */		
+	$(".money_mask").maskMoney({showSymbol:true, symbol:"", decimal:",", thousands:"."});
+	/* ............................................................................ */		
+		
+	/* -- */
+	
+	/* ............................................................................ */		
+	$("label").click(function(){		
+		$(this).parent().find("input,textarea").focus();
+	});
+	/* ............................................................................ */		
+	
+	/* -- */
+	
+	/* ............................ inputFileMultiple ................................................ */
+	$(".input_file_multiple_box").inputFileMultiple({
+		start:true
+	});// end inputFileMultiple
+	/* ........................... /inputFileMultiple ................................................ */
+	
+	/* -- */		
+	
+	setTimeout(function(){
+	
+		$(".numbers").keypress(function (e){
+		  var charCode = (e.which) ? e.which : e.keyCode;
+		  if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+			return false;
+		  }
+		});//end keyPressNumbers
+
+	}, 1000);
+	
+});//end doc
+</script>
+

@@ -1,0 +1,12 @@
+//$.getScript("engine/form-master/js/form-master-global-vars.js");
+$.getScript("engine/form-master/js/form-master-action_nav_btn_novo.js");	
+$.getScript("engine/form-master/js/form-master_action_nav_btn_edit.js");
+$.getScript("engine/form-master/js/form-master_action_nav_btn_removidos.js");
+$.getScript("engine/form-master/js/form-master_btn_decline.js");
+$.getScript("engine/form-master/js/form-master_btn_new.js");
+$.getScript("engine/form-master/js/form-master_btn_enable.js");
+$.getScript("engine/form-master/js/form-master_btn_generate_link.js");
+$.getScript("engine/form-master/js/form-master_btn_remove.js");
+$.getScript("engine/form-master/js/form-master_btn_reactive.js");
+$.getScript("engine/form-master/js/form-master_click_focus.js");
+$.getScript("engine/form-master/js/form-master-submit.js");
